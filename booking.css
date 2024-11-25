@@ -1,0 +1,272 @@
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Rubik',sans-serif;
+    }
+
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        }
+        
+    nav{             /*Navigation bar style */
+        position: fixed;
+        margin: 10px;
+        z-index: 1000;
+        top:0;
+        left:5px;
+        height:50px;
+        background-color: rgb(254, 254, 254);
+        width:98%;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        font-weight: 400;
+        border-radius:40px;
+        margin-top:10px;  
+    }
+            
+    .logopic{         /*Logotype style */
+        position: relative;
+        height: 100%;
+        margin:0 auto;
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+            
+    .nav-links{     /*Navigation link style */
+        display: flex;
+        align-items: center;
+    }
+            
+    .nav-links li,.links{
+        list-style: none;
+        margin:0 20px;
+        color: black;
+    }
+    .links{
+        padding-bottom: 5px;
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+        
+    .userbutton{         /*Button style */
+        background-color: #FFDCDC;
+        border:none;
+        padding:10px 20px;
+        color:aliceblue;
+        border-radius: 2px;
+        margin:20px;
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .userbutton:hover{
+        background-color: #dd8383;
+        transition-duration: 0.3s;
+    }
+    .fa-user,.fa-cart-shopping{     /*Icons style */
+        margin:5px;
+        color:#262424;
+    }
+    .book-banner{       /*Book banner section style */
+        background: url('images/pic20.jpg') no-repeat center center/cover;
+        width: 100%;
+        height: 660px;
+        position: relative;
+
+    }
+    .book-banner h1{    /*Book banner heading style */
+        display: flex;
+        flex-direction: column;
+        padding:140px;
+        margin-top:40px;
+        font-size: 50px;
+        color:rgb(246, 246, 246);
+        font-weight: 700;
+        width:900px;
+
+    }   
+    .main{           /*Main container placement */
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top:50px;
+    }
+    .main2{         /*Second main container placement */ 
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .picture{       /*Picture class style */
+        width:100%;
+        height: 295px;
+    }
+    .picture2{
+        width:340px;
+        height: 254px;
+    }
+    .description h1{    /*Container header */
+        font-size: 20px;
+    }
+    .container1,.container.btn1:hover{  /*Container style*/
+        width:450px;
+        height:680px;
+        background-color:#f9f9f9 ;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        align-items: center;
+        border-radius: 10px;
+        margin:20px;
+    }
+    .container2{
+        width:340px;
+        height:auto;
+        background-color:#f9f9f9 ;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        align-items: center;
+        border-radius: 10px;
+        margin:20px;
+    }
+    
+    .description h3,h4,p{ /*Container headings style*/
+        padding:20px;
+        color: #1e1c1c;
+    }
+    .description p{
+        padding:20px;
+        color: #1e1c1c;
+    }
+    .btn1{  /*Container button style */
+        width:90%;
+        padding:10px 20px;
+        align-items: center;
+        margin-left:25px;
+        background-color: #f9f9f9;
+        border:1px solid #f7baba;
+        border-radius: 5px;
+        color:#f7baba;
+        cursor: pointer;
+    }
+    .btn1:hover{
+        background-color: #dd8383;
+        color:#f9f9f9;
+        transition-duration: 0.5s;
+    }
+    .see{  /*See All button style*/
+        width:10%;
+        padding:10px 20px;
+        align-items: center;
+        margin-left:86%;
+        background-color: #f9f9f9;
+        border:1px solid #f7baba;
+        border-radius: 5px;
+        color:#f7baba;
+        cursor: pointer;
+    }
+    .deal h1{ /*Container heading */
+        color: rgb(63, 56, 56);
+        display: flex;
+        flex-direction: column;
+        padding:40px;
+        font-size: 50px;
+        font-weight: 700;
+        margin-left:150px;
+
+    }
+    .footer-content{        /*Footer content styling*/
+        background:#FFDCDC ;
+        padding-top:50px;
+        width:100%;
+        margin-top:30px;
+    }
+    .fcontainer{  /*Main container inside of container*/
+        width:100%;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+    }
+    .footer-content ul{     /*Footer list styling*/
+        list-style-type: none;
+    }
+    .footer-content h3{     /*Footer headings styling*/
+        font-size: 18px;
+        color:#fff;
+    }
+    .list a{             /*Footer text styling*/
+        padding:0;
+        color:#fff;
+    }
+    .list li,p{         /*Footer text styling*/
+        width:auto;
+        font-size: 15px;
+        color:#fff;
+        padding:5px;
+    }
+    .bottom-bar{         /*Footer horizontal line under text*/
+        background:#FFDCDC;
+    }
+    hr{
+        border-top: 1px solid rgb(255, 255, 255);   /*Footer horizontal line under text*/
+    }
+        
+    .bottom-bar p{    /*Footer paragraph in horizontal line*/
+        text-align: right;
+        color:#fff;
+        font-weight: 500;
+    }
+    .subscribe p{        /*Footer paragraph*/
+        margin-left:4px;
+    }
+    .searching{          /*Footer search*/
+        width:80%;
+        padding:5px;
+        border:none;
+        margin-left:6px;
+        border-radius:2px;
+    }
+    .fa-envelope{          /*Footer icon*/
+        color: #c087a1;
+        position:absolute;
+        right:5%;
+        margin-top:6px;
+        cursor: pointer;
+    }
+    .fname{         /*Footer image */
+        display: flex;
+    }
+    .fname h1{      /*Footer image heading */
+        font-size: 20px;
+        color:#ffffff;
+    }
+    .icons2{            /*Footer social icons */
+        color:#fff;
+        align-items: center;
+        display: flex;
+        gap:10px;
+        margin-left:50px;
+        margin-bottom:30px;
+        margin-top:10px;
+        cursor: pointer;
+    }
+    .fpic{               /*Name of the footer image */
+        width:152px;
+        height:80px;
+    }
+    .footer-content p:hover{
+        color:#dd8383;
+        transition-duration: 0.6s;
+    }
+    .list a:hover{
+        color:#dd8383;
+        transition-duration: 0.6s;
+    }
+    

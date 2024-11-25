@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="campingorder.css">
+    <link rel="icon" type="image/png" href="images/short.svg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <div class="logopic">
+        <a href="C:\Users\Murat\Desktop\website 2\homepage.html"><img class="logo" src="images/logo.svg" style="width:80px;height: 80px;"></a>
+        <ul class="nav-links">
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\contactus.html">CONTACT US</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\incruises.html">INCRUISES</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\tour.html">TOURS</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\booking.html">BOOKING</a></li>
+        </ul>
+            <div class="icons">
+            <a href="C:\Users\Murat\Desktop\website 2\signin.html"><button class="userbutton">LOGIN</button></a>
+            <a href="user.html"><i id="loginshow" class="fa-regular fa-user"></i></a>
+            <i class="fa-solid fa-cart-shopping" onclick="toggle()" id="cart2"></i>
+            <span class="quantity"></span>
+            </div>
+            </div>
+    </nav>
+    <!--Section Booking-->
+    <section class="place-take">
+        <div class="header-content">
+            <h1>Enjoy Your Dream Vacation</h1>
+            <p>Book tickets and stay packages at lowest price. </p>
+        </div>
+        <div class="second-container">
+        <div class="book-container">
+            <form onsubmit="return false;">
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>Vacation type</p>
+                        <select>
+                            <option>Camping</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>From</p>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>To</p>
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>Adults</p>
+                        <input type="text" maxlength="1" required>
+                </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>Toddlers</p>
+                        <input type="text" maxlength="1" >
+                </div>
+                <div class="form-group">
+                    <button class="btn2" onclick="toggle2()">CHECK PRICE</button>
+                    </div>
+            </form>
+        </div>
+        </div>
+    </section>
+     <!--Product Range-->
+    <section class="product">
+        <h1>Select a price range <i class="fa fa-caret-down"></i></h1>
+        <ul class="items">
+        <li class="first" data-category="ALL">All category</li>
+        <li class="first" data-category="400000-1000000">From 800 000 - 1 000 000</li>
+        <li class="first" data-category="200000-300000">From 200 000 - 300 000</li>
+        <li class="first" data-category="140000-200000">From 140 000 - 200 000</li>
+        </ul>
+    <!--Place field-->
+        <div class="product-field" data-category="200000-300000">
+        <div class="image-field">
+            <img class="pictures" src="images/Yurta Base Camp.png">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>Yurta Base Camp, Shymbulak Mountain Resort</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Camping in Beskainar</p>
+            <br>
+            <p>640 Kerey Zhanibek Khandar, 050020 Beshkaynar, Kazakhstan</p>
+            <br>
+            <h3>The tent</h3>
+            <p>1 tent/tent</p>
+            <p>4 futons</p>
+            <p class="warn">There is only 1 option left on our website at this price</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 270 000</p>
+               <a href="bookingdetails.html"><button class="btn3">See availability</button></a>
+            </div>
+        </div>
+    </div>
+     <!--Place Field-->
+        <div class="product-field" data-category="200000-300000">
+        <div class="image-field">
+            <img class="pictures" src="images/@Logovo_Sovi.png">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>@Logovo_Sovi</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Camping in Beskainar</p>
+            <br>
+            <p>640 Kerey Zhanibek Khandar, 050020 Beshkaynar, Kazakhstan</p>
+            <br>
+            <h3>The tent</h3>
+            <p>1 tent/tent</p>
+            <p>4 futons</p>
+            <p class="warn">There are no available places on our website from Nov 24 to Nov 30..</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 270 000</p>
+               <button class="btn3">See availability</button>
+            </div>
+        </div>
+    </div>
+     <!--Place Field-->
+    <div class="product-field" data-category="400000-1000000">
+        <div class="image-field">
+            <img class="pictures" src="images/pic25.jpg">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>Shymbulak Guest ,Shymbulak Mountain Resort</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Camping in Beskainar</p>
+            <br>
+            <p>501 Gornaya Street, 050000 Beskainar, Kazakhstan</p>
+            <br>
+            <h3>1 bedroom villa</h3>
+            <p>1 whole villa • 1 bedroom • 2 bathrooms • 200 m2</p>
+            <p>Free cancellation</p>
+            <p>Prepayment is not required — pay on the spot</p>
+            <p class="warn">There is only 1 option left on our website at this price</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 1 260 000</p>
+               <button class="btn3">See availability</button>
+            </div>
+        </div>
+    </div>
+     <!--Place Field-->
+    <div class="product-field" data-category="200000-300000">
+        <div class="image-field">
+            <img class="pictures" src="images/pic26.jpg">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>Top Hill Resort</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Camping in Beskainar</p>
+            <br>
+            <p>47 Tole-bi str., 041610 Beskainar, Kazakhstan</p>
+            <br>
+            <h3>Family Suite</h3>
+            <p>1 extra large double bed</p>
+            <p></p>
+            <p class="warn">There are no available places on our website from Nov 24 to Nov 30..</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 270 000</p>
+               <button class="btn3">See availability</button>
+            </div>
+        </div>
+    </div>
+     <!--Place Field-->
+    <div class="product-field" data-category="140000-200000">
+        <div class="image-field">
+            <img class="pictures" src="images/pic21.png">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>Camping Caravanserai</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Camping in Beskainar</p>
+            <br>
+            <p>640 Kerey Zhanibek Khandar, 050020 Beshkaynar, Kazakhstan</p>
+            <br>
+            <h3>The tent</h3>
+            <p>1 tent/tent</p>
+            <p>4 futons</p>
+            <p class="warn">There are no available places on our website from Nov 24 to Nov 29..</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 140 705</p>
+               <button class="btn3">See availability</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Card Container-->
+<div class="cart-container1" id="container1">
+    <div class="naming2">
+    <h2>My Cart</h2>
+    <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <ul id="items">
+    </ul>
+    <button id="clear">CLEAR CART</button>
+    <a href="payment.html"><button id="check">BOOK</button></a>
+    <p id="total">Total: ₸ 0</p>
+</div>
+<!--Footer Content-->
+<footer>
+    <div class="fcontainer">
+        <div class="footer-content">
+            <div class="fname">
+                <img class="fpic" src="images/logo2.svg">
+                <h1>Qorgalzhyn</h1>
+            </div>
+            <div class="icons2">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: qorgalzhyn@mail.ru</p>
+            <p>Head address: Elorda 24,Atyrau</p>
+            <p>Phone number: 04-23-19</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <ul class="list">
+            <li><a href="incruises.html">Travel tips</a></li>
+            <li><a href="tour.html">Activities</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>SUBSCRIBE</h3>
+            <p>Enter your email to get notified for our new tours</p>
+            <input type="search" class="searching">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+    </div>
+    <hr>
+    <div class="bottom-bar">
+        <p>© 2024 Qorgalzhyn inc. All rights reserved</p>
+    </div>
+</body>
+<script src="selection.js"></script>
+<script src="dropdownrange.js"></script>
+<script src="productson.js"></script>
+<script src="basket.js"></script>
+<script src="carttoggle.js"></script>
+</html>
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="images/short.svg"/>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <div class="logopic">
+        <a href="C:\Users\Murat\Desktop\website 2\homepage.html"><img class="logo" src="images/logo.svg" style="width:80px;height: 80px;"></a>
+        <ul class="nav-links">
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\contactus.html">CONTACT US</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\incruises.html">INCRUISES</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\tour.html">TOURS</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\booking.html">BOOKING</a></li>
+        </ul>
+            <div class="icons">
+            <a href="C:\Users\Murat\Desktop\website 2\signin.html"><button class="userbutton">LOGIN</button></a>
+            <a href="user.html"><i id="loginshow" class="fa-regular fa-user"></i></a>
+            <i class="fa-solid fa-cart-shopping" ></i>
+            </div>
+            </div>
+    </nav>
+    <!--Booking banner image section-->
+    <section class="book-banner">
+    </section>  
+    <div class="popup" id="popup">
+        <i class="fa fa-check"></i>
+        <h2>Your booking is accepted!</h2>
+        <br>
+        <h5>We will send the news to your email </h5>
+        <br>
+        <button id="closepopup">Close</button>
+    </div>
+    <!--Images-->
+    <div class="images">
+        <img src="images/Yurta Base Camp.png" class="picture">
+        <img src="images/Yurta2.png" class="picture">
+        <img src="images/Yurta3.png" class="picture">
+    </div>
+    <!--Main class of information-->
+    <div class="main">
+    <div class="details">
+        <div class="details1">
+        <h3>Yurta Base Camp, Shymbulak Mountain Resort</h3>
+        <p>Camping in Beskainar</p>
+        <p>640 Kerey Zhanibek Khandar, 050020 Beshkaynar, Kazakhstan</p>
+        <br>
+        <h3>The tent</h3>
+        <p>1 tent</p>
+        <p>4 futons</p>
+        <p>There is only 1 option left on our website at this price</p>
+        </div>
+        <div class="details2">
+        <p>6 nights, 2 adults</p>
+        <br>
+        <h3>KZT 270 000</h3>
+        <br>
+        <button class="btn1">See availability</button>
+        </div>
+    </div>
+    </div>
+    <!--Filling forms-->
+    <div class="form-details">
+        <div class="form-details-fix">
+        <form class="fillout">
+            <div class="row">
+            <input type="text" class="fillinfo" placeholder="First name">
+            <input type="text" class="fillinfo" placeholder="Last name">
+            </div>
+            <input type="text" class="fillinfo" placeholder="Email address">
+            <input type="text" class="fillinfo" placeholder="Phone number" maxlength="11">
+            <input type="text" class="fillinfo" placeholder="Card number" maxlength="16" >
+            <input type="text" class="fillinfo" placeholder="Billing address">
+            <input type="checkbox" class="fillinfo2">
+            <p>I agree to the booking terms and payment policies.</p>
+            <button id="openpopup" class="submit">Submit</button>
+        </form>
+        </div>
+        <div class="contact-pic">
+            <img class="contact-img2" src="images/Yurta4.png">
+        </div>
+        </div>
+        <!--Footer Content-->
+        <footer>
+            <div class="fcontainer">
+                <div class="footer-content">
+                    <div class="fname">
+                        <img class="fpic" src="images/logo2.svg">
+                        <h1>Qorgalzhyn</h1>
+                    </div>
+                    <div class="icons2">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3>Contact Us</h3>
+                    <p>Email: qorgalzhyn@mail.ru</p>
+                    <p>Head address: Elorda 24,Atyrau</p>
+                    <p>Phone number: 04-23-19</p>
+                </div>
+                <div class="footer-content">
+                    <h3>Quick Links</h3>
+                    <ul class="list">
+                    <li><a href="liner.html">Travel tips</a></li>
+                    <li><a href="activities.css">Activities</a></li>
+                    <li><a href="activities.css">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>SUBSCRIBE</h3>
+                    <p>Enter your email to get notified for our new tours</p>
+                    <input type="search" class="searching">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-bar">
+                <p>© 2024 Qorgalzhyn inc. All rights reserved</p>
+            </div>
+    </body>
+    <script src="requestpopup.js"></script>
+    </html>

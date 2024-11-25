@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="linerorder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="images/short.svg"/>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <div class="logopic">
+        <a href="C:\Users\Murat\Desktop\website 2\homepage.html"><img class="logo" src="images/logo.svg" style="width:80px;height: 80px;"></a>
+        <ul class="nav-links">
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\contactus.html">CONTACT US</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\incruises.html">INCRUISES</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\tour.html">TOURS</a></li>
+            <li><a class="links" href="C:\Users\Murat\Desktop\website 2\booking.html">BOOKING</a></li>
+        </ul>
+            <div class="icons">
+            <a href="C:\Users\Murat\Desktop\website 2\signin.html"><button class="userbutton">LOGIN</button></a>
+            <a href="user.html"><i id="loginshow" class="fa-regular fa-user"></i></a>
+            <i class="fa-solid fa-cart-shopping" onclick="toggle()" id="cart2"></i>
+            <span class="quantity"></span>
+            </div>
+            </div>
+    </nav>
+    <!--Section Booking-->
+    <section class="place-take">
+        <div class="header-content">
+            <h1>Enjoy Your Dream Vacation</h1>
+            <p>Book tickets and stay packages at lowest price. </p>
+        </div>
+        <div class="second-container">
+        <div class="book-container">
+            <form onsubmit="return false;">
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>Vacation type</p>
+                        <select>
+                            <option>Liner</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>From</p>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>To</p>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>Adults</p>
+                        <input type="number" maxlength="5" required>
+                </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <p>Toddlers</p>
+                        <input type="number" maxlength="5" required>
+                </div>
+                <div class="form-group">
+                    <button class="btn2" onclick="toggle2()">CHECK PRICE</button>
+                    </div>
+            </form>
+        </div>
+        </div>
+    </section>
+     <!--Product Range-->
+    <section class="product">
+        <h1>Select a price range <i class="fa fa-caret-down"></i></h1>
+        <ul class="items">
+        <li class="first" data-category="ALL">All category</li>
+        <li class="first" data-category="190000-450000">From 190 000 - 450 000</li>
+        <li class="first" data-category="1000000-3000000">From 1 000 000 - 3 000 000 </li>
+        <li class="first" data-category="850000">From 850 000</li>
+        </ul>
+    <!--Liner field-->
+        <div class="product-field" data-category="1000000-3000000">
+        <div class="image-field">
+            <img class="pictures" src="images/ship1.png">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>Icon of the Seas</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Company:MSC Cruises</p>
+            <br>
+            <p>The price of a cruise per person in a 2-bed cabin, including all discounts.</p>
+            <br>
+            <p>Cruise taxes and fees are paid additionally.</p>
+            <p class="warn">There is only 1 option left on our website at this price</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 2 058 912</p>
+               <a href="requestliner.html"><button class="btn3">Leave a request</button></a>
+            </div>
+        </div>
+    </div>
+     <!--Liner Field-->
+        <div class="product-field" data-category="190000-450000">
+        <div class="image-field">
+            <img class="pictures" src="images/ship2.png">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>MSC Euribia</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Company:MSC Cruises</p>
+            <br>
+            <p>The price of a cruise per person in a 2-bed cabin, including all discounts.</p>
+            <br>
+            <p>Cruise taxes and fees are paid additionally.</p>
+            <p class="warn">There are no available places on our website from Nov 24 to Nov 30..</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 435 669</p>
+               <button class="btn3">Leave a request</button>
+            </div>
+        </div>
+    </div>
+     <!--Liner Field-->
+    <div class="product-field" data-category="850000">
+        <div class="image-field">
+            <img class="pictures" src="images/ship3.png">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>MSC Sinfonia</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Company:MSC Cruises</p>
+            <br>
+            <p>The price of a cruise per person in a 2-bed cabin, including all discounts.</p>
+            <br>
+            <p>Cruise taxes and fees are paid additionally.</p>
+            <p class="warn">There is only 1 option left on our website at this price</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 850 567</p>
+               <button class="btn3">Leave a request</button>
+            </div>
+        </div>
+    </div>
+     <!--Liner Field-->
+    <div class="product-field" data-category="1000000-3000000">
+        <div class="image-field">
+            <img class="pictures" src="images/ship4.png">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>Celebrity Eclipse</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Company:MSC Cruises</p>
+            <br>
+            <p>The price of a cruise per person in a 2-bed cabin, including all discounts.</p>
+            <p>Cruise taxes and fees are paid additionally.</p>
+            <p class="warn">There are no available places on our website from Nov 24 to Nov 30..</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 3 037 740</p>
+               <button class="btn3">Leave a request</button>
+            </div>
+        </div>
+    </div>
+     <!--Liner Field-->
+    <div class="product-field" data-category="190000-450000">
+        <div class="image-field">
+            <img class="pictures" src="images/ship5.png">
+        </div>
+        <div class="description-field">
+            <div class="naming">
+            <h3>MSC Lirica</h3>
+            <button class="add"><i id="cart" class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <br>
+            <p>Company:MSC Cruises</p>
+            <br>
+            <p>The price of a cruise per person in a 2-bed cabin, including all discounts.</p>
+            <br>
+            <p>Cruise taxes and fees are paid additionally.</p>
+            <p class="warn">There are no available places on our website from Nov 24 to Nov 29..</p>
+            </div>
+            <div class="description-field2">
+                <p>6 nights, 2 adults</p>
+                <br>
+                <p class="price">KZT 196 284</p>
+               <button class="btn3">Leave a request</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Card Container-->
+<div class="cart-container1" id="container1">
+    <div class="naming2">
+    <h2>My Cart</h2>
+    <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <ul id="items">
+    </ul>
+    <button id="clear">CLEAR CART</button>
+    <a href="file:///C:/Users/Murat/Desktop/Website/payment.html"><button id="check">LEAVE A REQUEST</button></a>
+    <p id="total">Total: ₸ 0</p>
+</div>
+<!--Footer Content-->
+<footer>
+    <div class="fcontainer">
+        <div class="footer-content">
+            <div class="fname">
+                <img class="fpic" src="images/logo2.svg">
+                <h1>Qorgalzhyn</h1>
+            </div>
+            <div class="icons2">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: qorgalzhyn@mail.ru</p>
+            <p>Head address: Elorda 24,Atyrau</p>
+            <p>Phone number: 04-23-19</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <ul class="list">
+            <li><a href="liner.html">Travel tips</a></li>
+            <li><a href="activities.css">Activities</a></li>
+            <li><a href="activities.css">Booking</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>SUBSCRIBE</h3>
+            <p>Enter your email to get notified for our new tours</p>
+            <input type="search" class="searching">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+    </div>
+    <hr>
+    <div class="bottom-bar">
+        <p>© 2024 Qorgalzhyn inc. All rights reserved</p>
+    </div>
+</body>
+<script src="selection.js"></script>
+<script src="dropdownrange.js"></script>
+<script src="productson.js"></script>
+<script src="basket.js"></script>
+<script src="carttoggle.js"></script>
+</html>
+
