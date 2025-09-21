@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://website-2-main-q4g0sjt0f-nazerkes-projects-5afc7283.vercel.app/index.html](https://website-2-main-q4g0sjt0f-nazerkes-projects-5afc7283.vercel.app/index.html)
+[https://website-2-main-q4g0sjt0f-nazerkes-projects-5afc7283.vercel.app/index.html](website-2-main.vercel.app)
 
   
   
