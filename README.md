@@ -2,7 +2,7 @@
 
 <p id="description">Korgalzhyn – a unique getaway in Kazakhstan. Discover the Korgalzhyn National Park home to crystal-clear lakes rare birds and famous pink flamingos. Perfect for eco-tours family trips and weekend escapes.</p>
 
-<h2>🚀 Demo</h2>
+<h2>🚀Desktop version Demo</h2>
 
 [https://website-2-main.vercel.app/](https://website-2-main.vercel.app/)
 
